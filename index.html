@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+    <div class="restart-screen hide">
+      <p id="restart-p">You won!</p>
+      <button id="restart-btn">Restart</button>
+    </div>
+<body>
+  <div class="h3">Rock Paper Scissor</div>
+  <div class="sub">by Durubhuru</div>
+  <div class="game-container">
+    <div data-btn="btn" data-selection="🪨" class="rock">🪨</div>
+    <div data-btn="btn" data-selection="📃" class="paper">📃</div>
+    <div data-btn="btn" data-selection="✂️" class="scissor">✂️</div>
+  </div>
+  <div class="choice">
+      <div class="player-choice">Player choice:<span id="player-choice"></span></div>
+      <div class="computer-choice">Computer choice:<span id="computer-choice"></span></div>
+    </div>
+    <div class="verdict"></div>
+    <div class="round-winner">
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
