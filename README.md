@@ -20,3 +20,7 @@ To view or modify the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/rock-paper-scissors-app.git
+2. Navigate to directory:
+   ```bash
+   cd rock-paper-scissors
+3. Open **index.html** in your web browser.
