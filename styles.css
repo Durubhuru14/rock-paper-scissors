@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4.5vw;
+    color: #fff;
+    text-align: center;
+    font-family: Pacifico;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    padding-top: 12px;
+}
+
+@keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+.game {
+    height: calc(100vh - 98px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Monoton', cursive;
+    color: rgb(255, 5, 47);
+    text-shadow: 0px 0 10px rgb(107, 0, 128);
+}
+
+.score {
+    width: 100vw;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+
+.player-score {
+    float: left;
+    text-align: center;
+    padding-left: 4%;
+}
+
+.computer-score {
+    float: right;
+    text-align: center;
+    padding-right: 4%;
+}
+
+.selections {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    gap: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.select {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 10vw;
+    outline: none;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.select::before{
+    content: '';
+    width: 75%;
+    height: 100%;
+    transform: skew(45deg);
+    position: absolute;
+    left: -89px;
+    background: rgba(255,255,255,0.2);
+    transition: 0.5s;
+}
+
+.select:hover::before{
+    width:200%;
+}
+
+.result {
+    display: flex;
+    width: 100vw;
+    margin-top: 15px;
+}
+
+.result div {
+    position: absolute;
+    font-size: 2.7vw;
+    width: 30vw;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+div:first-child{
+    margin-left: 12px;
+}
+
+div:last-child{
+    margin-right: 12px;
+}
+
+.player-choice {
+    margin-left: 7px;
+}
+
+.computer-choice {
+    margin-left: 7px;
+}
+
+.player-choice,
+.computer-choice {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vmin;
+    background-color: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(12px);
+}
+
+footer {
+    text-align: center;
+    color: rgb(255,255,255);
+}
+
+.restart-window {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(6px);
+    visibility: hidden;
+    font-family: 'Monoton', cursive;
+    color: rgb(255, 5, 47);
+}
+
+a{
+    text-decoration: none;
+}
+
+.winner {
+    font-size: 9vw;
+}
+
+.restart-window > p {
+    font-size: 3vw;
+}
+
+.restart-btn {
+    margin-top: 1vh;
+    color: white;
+    font-family: 'Monoton', cursive;
+    background: rgb(247, 58, 58);
+    font-size: 2vw;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.show-restart-window {
+    visibility: visible;
+}
+
+@media screen and (max-width:550px) {
+    .select {
+        width: 30%;
+        height: 74%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .result div {
+        font-size: 1em;
+    }
+    footer {
+        font-size: 10px;
+    }
+    .score {
+        font-size: 3vw;
+    }
+    .result div{
+        font-size: 2.8vw;
+    }
+    .restart-window {
+        line-height: 2em;
+    }
+    .restart-window > p {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width:664px) {
+    .select {
+        width: 20%;
+    }
+    .score {
+        font-size: 1.7vw;
+    }
+    .select {
+        width: 15%;
+        height: 75%;
+        font-size: 5vw;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .score {
+        top: 40%;
+    }
+    .result div {
+        font-size: 2vw;
+    }
+    .game {
+        height: calc(100vh - 98px - 1vh);
+    }
+    .select:hover {
+    transform: scale(1.1);
+    }
+}

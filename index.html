@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="background/background.mp4" type="video/mp4">
+</video>
+<audio class="bgm" src="background/cyberpunk-2099-10701.mp3" loop autoplay></audio>
+<audio src="background/mixkit-sci-fi-click-900.wav" class="click"></audio>
+<h1>Rock Paper Scissor</h1>
+<div class="game">
+  <div class="score">
+    <span class="player-score">👩/👨<br>Player Score:<br><span data-player-score>0</span></span>
+    <span class="computer-score">🤖<br>Computer Score:<br><span data-computer-score>0</span></span>
+  </div>
+  <div class="selections">
+    <button data-selection="rock" class="select rock shadow">✊</button>
+    <button data-selection="paper" class="select paper">✋</button>
+    <button data-selection="scissor" class="select scissor">✌️</button>
+  </div>
+  <div class="result">
+    <div style="left: 0;">Player Choice:<span class="player-choice"></span></div>
+    <div style="left: 50%; transform: translateX(-50%);" class="round-won"></div>
+    <div style="right: 0;">Computer Choice:<span class="computer-choice"></span></div>
+  </div>
+</div>
+<footer>
+  <p>copyright&copy; Durubhuru <span style="display: inline-block; margin-left: px;" class="year"></span></p>
+</footer>
+<div class="restart-window">
+  <h2 class="winner"></h2>
+  <p>Do you want to play again?</p>
+  <button class="restart-btn">Restart</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
