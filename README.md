@@ -11,7 +11,7 @@ This application allows users to play the classic game of Rock Paper Scissors ag
 
 ## Live Demo
 
-Check out the deployed version of the Rock Paper Scissors App [https://durubhuru14.github.io/rock-paper-scissors/](#)
+Check out the deployed version of the Rock Paper Scissors App [here](https://github.com/Durubhuru14/rock-paper-scissors)
 
 ## Installation
 
@@ -19,7 +19,7 @@ To view or modify the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/rock-paper-scissors-app.git
+   git clone https://github.com/Durubhuru14/rock-paper-scissors-app.git
 2. Navigate to directory:
    ```bash
    cd rock-paper-scissors
