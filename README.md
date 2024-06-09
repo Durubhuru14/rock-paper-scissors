@@ -11,7 +11,7 @@ This application allows users to play the classic game of Rock Paper Scissors ag
 
 ## Live Demo
 
-Check out the deployed version of the Rock Paper Scissors App [here](#).
+Check out the deployed version of the Rock Paper Scissors App [https://durubhuru14.github.io/rock-paper-scissors/](#).
 
 ## Installation
 
